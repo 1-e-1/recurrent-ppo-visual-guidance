@@ -1,0 +1,42 @@
+{
+  "version": "perception_first_v1_20260916",
+  "status": "development_contract_not_trained",
+  "reaction_optimization": false,
+  "observation_authority": "RGB-D, calibrated FK, measured map, actuator feedback; no scene truth",
+  "actor_and_critic_truth_inputs": false,
+  "training_seed_range_inclusive": [100000, 899999],
+  "bootstrap_legacy_development_train_seeds": [93002, 82001, 93001, 82004, 82015, 82022, 82002],
+  "bootstrap_legacy_development_validation_seeds": [93003, 82017],
+  "bootstrap_scope": "Recorded measured-action imitation only; separate from online PPO and formal evaluation",
+  "validation_seed_range_inclusive": [900000, 900199],
+  "test_seed_range_inclusive": [1000000, 1000999],
+  "formal_scene_count": 1000,
+  "minimum_scene_successes": 990,
+  "success_unit": "All objects placed and withdrawn with independent geometry, capture, placement and timing audits",
+  "all_started_failures_and_interruptions_count": true,
+  "confidence_interval": "Report Wilson 95%; 990/1000 is a point estimate, not proof that population success is >=99%",
+  "randomization": {
+    "objects_per_scene": [1, 6],
+    "table_height_m": [0.70, 0.82],
+    "yaw_deg": [-180, 180],
+    "tilt_deg": [-30, 30],
+    "placement": "bounded noninterpenetrating placement; no IK, visibility, or success admission",
+    "families": ["box", "cylinder", "hex_prism", "wedge", "tool_bolt", "tool_nut", "tool_wrench", "tool_screwdriver"],
+    "size_position_separation": "Must freeze numerical workspace/size bounds after simulator integration and before independent evaluation",
+    "physical_support": "Validate generated poses against table support; unsupported samples must not silently become successes"
+  },
+  "interface_prior": "Known magnetic interface and requested destination; object count/extent/pose not supplied to policy",
+  "initial_map": "Only authenticated RGB-D; initial scan budget is part of evaluation and must be frozen",
+  "candidate_policy": {
+    "encoder": "RGB-D small CNN + measured map features + GRU",
+    "proprioception": "sin(q), cos(q), measured joint velocity, previous executed increment, history",
+    "continuous_action": "16 normalized joint increment proposals",
+    "discrete_action": ["none", "capture_request", "release_request"],
+    "safety": "whole-path self/inter-arm/environment/payload guard; rejection must not accumulate unexecuted commands",
+    "training": "fresh initialization, supervised bootstrap optional, recurrent PPO online",
+    "reaction_reward_weight": 0.0
+  },
+  "parallelism": "Benchmark 1/4/16 real RGB-D environments before selecting count; do not assume proprioceptive-RL throughput",
+  "promotion": "No promotion from unit tests, proxy rewards, offline IK, or partial object success",
+  "status_notes": "Environment, actor observation adapter, PPO runner, and full-task evaluation still require integration"
+}

@@ -1,0 +1,886 @@
+{
+  "date": "2026-10-24",
+  "owner": "1-e-1",
+  "method": "Recurrent RGB-D policy and guarded online PPO integration for dual-arm visual guidance",
+  "files": [
+    {
+      "path": "astronaut_delivery/__init__.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/__init__.py",
+      "sha256_original": "6b1b08f22ce6e696230ea953b13a9aff9ef02cc7032ac3051b12e46c7761c5a1",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/adaptive_planning_map.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/adaptive_planning_map.py",
+      "sha256_original": "6ffa31c4247eff24d23f989548de38be05494adba7caa24b74057b8ed214651c",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/contact_lift_recovery.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/contact_lift_recovery.py",
+      "sha256_original": "d8bbae870d10c82241ae5d0fb42317c256ab4ed7431ae7c34706c714cbc6c3c6",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/continuous_visual.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/continuous_visual.py",
+      "sha256_original": "a117ace35ebb1e3122fef9b18fee0a06a82af03d238849090ac1f3c1e1aded3b",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/d435i.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/d435i.py",
+      "sha256_original": "1d754b9e7b4543626218addd967e691c104ef1efebc53fcfc4a3b6bd5ea12c3a",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/d435i_scene.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/d435i_scene.py",
+      "sha256_original": "a462a10b63701befb84aaeb0dd01dabae661af522566093f3db5d00a007a8185",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/evidence_ik.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/evidence_ik.py",
+      "sha256_original": "2ab7d7f0374c110f4ac292499e7414704b91d7e553f30cf6d5309ce945da0b63",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/evidence_view_focus.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/evidence_view_focus.py",
+      "sha256_original": "7eec2b48dc394a8e562d0e80463c17f6bf1f78b3d32285795473e4ff19cf3329",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/execution_freshness.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/execution_freshness.py",
+      "sha256_original": "d0543a0319cf7ec1914768b7a72a652c91863d166835cdd1476bd9f9cf60d54e",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/geometric_recovery.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/geometric_recovery.py",
+      "sha256_original": "e354628d1187f640fd820a021f7244c6ca129b5144068c9d9515fb691d69fc61",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/history_reacquisition.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/history_reacquisition.py",
+      "sha256_original": "10ae3344bd9777b3e05b6412bb61935b36b0d4472423beb575fcbca2d6f2b0c4",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/interface_mask_contract.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/interface_mask_contract.py",
+      "sha256_original": "b84bbb2e75a23b728f6050a01f1fdc72714c41c82c2eb361e70f4482574b5fd7",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/magnet.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/magnet.py",
+      "sha256_original": "c6a946b3cd93a40de3fef33cb7e00e26a6a9e12eed79507864e2f8db0a90a94b",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/maintenance_tools.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/maintenance_tools.py",
+      "sha256_original": "1a75ee5a134c938510baed9ee0055af47e4d7ec32c6e185d09e6c23226289b91",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/measured_payload.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/measured_payload.py",
+      "sha256_original": "85396b0a7a805a71ffe63440c33ee454856e848f4f2521e0d48348cd4f7cc3fa",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/measured_placement_candidates.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/measured_placement_candidates.py",
+      "sha256_original": "9f2b97e01bfd5ec6821278fb538c7fd9053f7f387577d51b98a634cdb5f4cd66",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/measured_surface.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/measured_surface.py",
+      "sha256_original": "613a8166426a9b5fc08f322948121c5b1b17ca235e85045580e64e197c826466",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/measured_task_memory.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/measured_task_memory.py",
+      "sha256_original": "3663b57100941100a2b9a4f06957bfb48665b26ad0f5a9b119ad28325c683d9e",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/measured_transport_height.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/measured_transport_height.py",
+      "sha256_original": "70d4e2b8dd01fc57ffffa1c02b45a1a5f2874c8baa9d22c6ba979ef3311c5c02",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/measurement_clock.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/measurement_clock.py",
+      "sha256_original": "f0f0dd56d5dc128bf2af0001338901b06d071c52ba60efce30621d7af252b923",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/motion.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/motion.py",
+      "sha256_original": "11e5aec7eda4659aab12f48248d3998bcca1541e997d7efc792e281b85239393",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/online_placement_pose.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/online_placement_pose.py",
+      "sha256_original": "67ca58ce35a497e1ac8d4bdb88329f732b8d41b49699ab8a693e88fd0e9c8459",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/online_scene.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/online_scene.py",
+      "sha256_original": "4f7b70e44c1235231c997a8e654a1a893bf8989b26bd23b69c17bcda332903a9",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/partial_marking.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/partial_marking.py",
+      "sha256_original": "58c3c3ff161a5ea6c0ea7a68001e84080b1f4250b2e04935e916c3988765819f",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/placement_evidence_map.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/placement_evidence_map.py",
+      "sha256_original": "00d004c7efc1c4efe329ca83b1e87945e16fec395d8b246d812f395cc596f22d",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/placement_pose_task.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/placement_pose_task.py",
+      "sha256_original": "841e7a572842b70e725823d3df2265455373ffe223996c89abf1fd87020a18d1",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/placement_vision.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/placement_vision.py",
+      "sha256_original": "fa2795f0d3b448451e77847280f82ed7fd30801b2d398cd6fb4d12ffe367f9a8",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/planned_placement_contact.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/planned_placement_contact.py",
+      "sha256_original": "f250404a75ec711f8a5228a2cd28b5e5e4109e4553efe6f7b1d83ae5df979b2e",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/randomized_benchmark.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/randomized_benchmark.py",
+      "sha256_original": "7f51150f717846e4b454183d9ace08f668b0bfd85500de0b7b170e3170e59216",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/ray_kernel.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/ray_kernel.py",
+      "sha256_original": "e22aa2758f484e185fe0438179422f961925accb52e49f818460ae439f5aabee",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/reaction.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/reaction.py",
+      "sha256_original": "e245727fffa1c826158b06920621428fd6d62f12645547b8f74e8bf75fcfc169",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/reaction_batch.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/reaction_batch.py",
+      "sha256_original": "45f0512b2c47e019887c95303af52fb8bd01082a424e9b23e5aaac111ad6346c",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/rejected_proposal_memory.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/rejected_proposal_memory.py",
+      "sha256_original": "8928ee0af6f4b39535f5f6e9da5a6beac19baf5d11342217bc2162d429c47fd1",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/released_interface_feedback.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/released_interface_feedback.py",
+      "sha256_original": "0f103505f0e61e0d7da3a5b4e782969cc33a8daa4a3d15fabed0870cba0974b7",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/rescan_occlusion.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/rescan_occlusion.py",
+      "sha256_original": "c3a66c2c771f370458f04c55a420a9e7de37cf5d910b56751b70147be7a82db1",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/rgbd_bootstrap.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/rgbd_bootstrap.py",
+      "sha256_original": "72686b29b1e58270199d5e04df57bdc4937f56f90b1e36a292424ab85de08476",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/rgbd_cooperative.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/rgbd_cooperative.py",
+      "sha256_original": "17b3f5c4334cb79bbddf0cf174461eddac677238e1d85751e6854b3d5198522b",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/rgbd_magnet_backend.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/rgbd_magnet_backend.py",
+      "sha256_original": "4bb24b361f4ad363e561654140de1a4f21de793eb233b180f389848a1967e1bc",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/rgbd_mission.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/rgbd_mission.py",
+      "sha256_original": "72e8df8a511c7a90726e0b5080f0ca9e14443d364496aec82d94212cc2dd2d26",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/rgbd_random_workcell.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/rgbd_random_workcell.py",
+      "sha256_original": "6a24c47bba0e3fc638af66a2e13cc6d87b133aed59d1bd9240e1ed371429017f",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/rgbd_sensor_faults.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/rgbd_sensor_faults.py",
+      "sha256_original": "98d4f29183587fe841dc3d31c44f7542b9fb1a86b38955b66537e617b3550a79",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/rgbd_sensor_service.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/rgbd_sensor_service.py",
+      "sha256_original": "5640e27e40dbba94b125f43a1893c1b0372554c67de1d95c51b184bb8fc98a92",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/rgbd_transfer.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/rgbd_transfer.py",
+      "sha256_original": "2bdaa8b4d92987a9c0e9fe4c90f2f4cc07c3dd59e6b56e990e4edf82d8d51e11",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/rigid_measured_surface.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/rigid_measured_surface.py",
+      "sha256_original": "f61fe773efa8f02f56d8ed30216a412ed0c2e1df87b0d1556d9832cdcba6cdcc",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/robot_evidence_refinement.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/robot_evidence_refinement.py",
+      "sha256_original": "6a444d16ec9c918b29d13c81a4060a3da41d352f381af9d7123815aae1b4d5fd",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/robot_hull_cover.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/robot_hull_cover.py",
+      "sha256_original": "44d4f6df9c9b97d79e6bbfe0f64a153263b36d3ee9a2ad8d15815d18b0532c26",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/robot_only_geometry.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/robot_only_geometry.py",
+      "sha256_original": "cca11ca2983434d8e8ebf2de5dedc88664a61467c602b5ebafcda0317da77f3e",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/run.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/run.py",
+      "sha256_original": "f3d0da5ffe2a174f3f9d798f72ac102fdef606b62d32e72455b80462403684db",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/scene.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/scene.py",
+      "sha256_original": "383291c798c6761b6863a5a157404e5359a850b10ecabd8c1f49e507d74b2502",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/simultaneous.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/simultaneous.py",
+      "sha256_original": "1601de25b6d20510d3a8f738202748011d746decb98b24687b5fb1039b8652ae",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/smooth_path.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/smooth_path.py",
+      "sha256_original": "97b80d7e1281ab7b2bbc14ddcb58a4fdb891a7c977d0e2c77b5287a212bd3bd0",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/source_freeze.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/source_freeze.py",
+      "sha256_original": "7000ac1d17fe198ff79bf19c46dfa22eabfba4c0bef3b052da6e412bcc8ad0d9",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/structured_ik.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/structured_ik.py",
+      "sha256_original": "a26c50ebb47f41e416ce100b44890b650fa8fa224ade6df7a8df275368cbbf8e",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/task_staging.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/task_staging.py",
+      "sha256_original": "3c54a8527c9963ed33c9989ff597ccb263a000f71580aab4e6578a96ee60fb9f",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/temporal_evidence_map.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/temporal_evidence_map.py",
+      "sha256_original": "b1f245b2e78b203ae56a9967309447c0f656a6ff871d9540bc8638c98d6d2d45",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/transfer_map_capacity.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/transfer_map_capacity.py",
+      "sha256_original": "94054838ea951d6223af5bfddf7b0dfeafb275df8f58098ab73bcade2cf2758a",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/vision.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/vision.py",
+      "sha256_original": "edc667e7d26c64d3e4bf7d67658ba1b1d9defa00be275b8ea193559827ae6ff0",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/visual_stall_gate.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/visual_stall_gate.py",
+      "sha256_original": "e94bb8baa28e722f666983c76c603cfbc854d3ef7338e185d7ebf0e76b3bfc6c",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "astronaut_delivery/visual_sufficiency.py",
+      "source_project": "lun",
+      "source_path": "astronaut_delivery/visual_sufficiency.py",
+      "sha256_original": "7bc8104370cb8dda9f8e2d8086b147bb2915f0be39eaa46f5e608f9cfdfec98f",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "classical_fusion/__init__.py",
+      "source_project": "lun",
+      "source_path": "classical_fusion/__init__.py",
+      "sha256_original": "3728de4464f385627ca157f23c913a239a1d85131619c0111d265591977e088a",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "classical_fusion/active_tsdf.py",
+      "source_project": "lun",
+      "source_path": "classical_fusion/active_tsdf.py",
+      "sha256_original": "64cc6867f5ffd4503cca7530782951362539ddbd599adad3ebf2ec035e997978",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "classical_fusion/active_tsdf_servo.py",
+      "source_project": "lun",
+      "source_path": "classical_fusion/active_tsdf_servo.py",
+      "sha256_original": "b54357bc9c38eeabe910e2a15aa1abedabf3879bbb7b1507d7053f2805216a18",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "classical_fusion/contact_corridor.py",
+      "source_project": "lun",
+      "source_path": "classical_fusion/contact_corridor.py",
+      "sha256_original": "f96b92da74d56278e5f406aa255f6461b3123045d9037fcd81992af2f5f03cea",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "classical_fusion/contact_intersection.py",
+      "source_project": "lun",
+      "source_path": "classical_fusion/contact_intersection.py",
+      "sha256_original": "7759b562170745324b52720e9e33267f656d2fde12df25199c15b783cf529744",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "classical_fusion/contact_query_grid.py",
+      "source_project": "lun",
+      "source_path": "classical_fusion/contact_query_grid.py",
+      "sha256_original": "96255fee0cc647e88d7a2a934212166997f1241e5bb481432e0b1753afa55ae3",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "classical_fusion/euclidean_envelope.py",
+      "source_project": "lun",
+      "source_path": "classical_fusion/euclidean_envelope.py",
+      "sha256_original": "3160e11f149e74a177f74dffb49082b2701cd1b70881fd4280f03253a5f39b6d",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "classical_fusion/local_tool_guard.py",
+      "source_project": "lun",
+      "source_path": "classical_fusion/local_tool_guard.py",
+      "sha256_original": "a4cd74ac41bb9308c95336dce59ecd9ca3356dca1bf2cd85f8fd8a6522e2b4ea",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "classical_fusion/measured_contact.py",
+      "source_project": "lun",
+      "source_path": "classical_fusion/measured_contact.py",
+      "sha256_original": "2be8f2bcf55ddf3be3921588990791f759650bee1f5c0f7f6fb186848d145b5a",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "classical_fusion/measured_object.py",
+      "source_project": "lun",
+      "source_path": "classical_fusion/measured_object.py",
+      "sha256_original": "c681d2e55b41285a0bef9ecbc0fe1a68d25085e36b699ba3a4a1fb37b1147b28",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "classical_fusion/partitioned_guard.py",
+      "source_project": "lun",
+      "source_path": "classical_fusion/partitioned_guard.py",
+      "sha256_original": "27e91778ac6505af4ce4f67516374388965d45a3d9176520813dc39b02d3ce1b",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "classical_fusion/payload_contact_guard.py",
+      "source_project": "lun",
+      "source_path": "classical_fusion/payload_contact_guard.py",
+      "sha256_original": "a689e3b53b6c8f789205049c9fc4cb674911b4adff72f39783b0f7069bb9949c",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "classical_fusion/planning_map.py",
+      "source_project": "lun",
+      "source_path": "classical_fusion/planning_map.py",
+      "sha256_original": "e271afedf97d30e4f930d95dde4c24e66bf9748e026c3044bff493f9e8dd0777",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "classical_fusion/refined_robot_guard.py",
+      "source_project": "lun",
+      "source_path": "classical_fusion/refined_robot_guard.py",
+      "sha256_original": "4e5dc9c115892417873f2c3f2be2a7b8123d18b63995fbb0caf94cb3e89b0cf3",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "classical_fusion/rgbd_guard.py",
+      "source_project": "lun",
+      "source_path": "classical_fusion/rgbd_guard.py",
+      "sha256_original": "218d27ab750f6b3f4a4dcf18ad23c945886c66c8c5306e7b27d2295fa1a37b04",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "classical_fusion/rgbd_recording.py",
+      "source_project": "lun",
+      "source_path": "classical_fusion/rgbd_recording.py",
+      "sha256_original": "e88c549459619a90bda54d321bff4ecd71ad7fca85d926b955acbb7c6492f88c",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "classical_fusion/robot_query_snapshot.py",
+      "source_project": "lun",
+      "source_path": "classical_fusion/robot_query_snapshot.py",
+      "sha256_original": "7b0c92fde42b2b44ce7986afe6651c5eb54a3297c0e6c97e50cf844a1bf111a5",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "classical_fusion/self_filter.py",
+      "source_project": "lun",
+      "source_path": "classical_fusion/self_filter.py",
+      "sha256_original": "0a5bd3b6563085eb42107ebc537ceb9906b00880bd010597a0a25b5cb877be83",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "classical_fusion/source_departure.py",
+      "source_project": "lun",
+      "source_path": "classical_fusion/source_departure.py",
+      "sha256_original": "8b58ee0997b0e11ef7354d3f0a5d09c4e1217b5491f9bffaab59180dd1890102",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "classical_fusion/static_interval_snapshot.py",
+      "source_project": "lun",
+      "source_path": "classical_fusion/static_interval_snapshot.py",
+      "sha256_original": "a5ac221e89259b145ed172cd87a3e3f6048f0792610356cc6a9aa1622f34d3fe",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "codex_zbot/__init__.py",
+      "source_project": "lun",
+      "source_path": "codex_zbot/__init__.py",
+      "sha256_original": "8c45c6e669745714576be2344371afd5b47edfd18c7e34b4c405f1b52c0ed6a8",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "codex_zbot/config.py",
+      "source_project": "lun",
+      "source_path": "codex_zbot/config.py",
+      "sha256_original": "d7413e61afc1250dec0c97e058c2e667ab92f0f2fa0ed7574b284d51f82f119f",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "codex_zbot/perception/__init__.py",
+      "source_project": "lun",
+      "source_path": "codex_zbot/perception/__init__.py",
+      "sha256_original": "137337282627eb687d17545dc94d7ddd21f3d325699b1f2b82bbbe827e355645",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "codex_zbot/perception/pointcloud.py",
+      "source_project": "lun",
+      "source_path": "codex_zbot/perception/pointcloud.py",
+      "sha256_original": "0ec2a2b972139f9d228162b34a8dc025a4fd42fbe241695741fa2bd49749d907",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "configs/ablation_coverage_only.json",
+      "source_project": "lun",
+      "source_path": "configs/ablation_coverage_only.json",
+      "sha256_original": "ad54a7060974dfce5338cb863967d725a33a4303875f48670903b85f5ade3bb9",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "configs/ablation_first_order.json",
+      "source_project": "lun",
+      "source_path": "configs/ablation_first_order.json",
+      "sha256_original": "23ae4af40041aeac0155e375c0507b0de3bef5d8551b2b533bda94b69847dccc",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "configs/ablation_manifest.example.json",
+      "source_project": "lun",
+      "source_path": "configs/ablation_manifest.example.json",
+      "sha256_original": "324ffe6d5bc113ce692165398a800cbc567a6238beb583131cab76365790f60d",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "configs/ablation_no_world_model.json",
+      "source_project": "lun",
+      "source_path": "configs/ablation_no_world_model.json",
+      "sha256_original": "21e313c43c2182d9669292e3bc059099682b72a549b2ddfaf55ef74a6b73482b",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "configs/astronaut_delivery.json",
+      "source_project": "lun",
+      "source_path": "configs/astronaut_delivery.json",
+      "sha256_original": "f4a5eec5a4c57f7c20a40f673e6127c08a96b392649acaa463a60db708232269",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "configs/base.json",
+      "source_project": "lun",
+      "source_path": "configs/base.json",
+      "sha256_original": "6e00a0388f9bbc828e7a72809f9a2acb569e20a8e5ebd5dc827cdc47fb2c2169",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "configs/camera_512_f110_integer_pixels.json",
+      "source_project": "lun",
+      "source_path": "configs/camera_512_f110_integer_pixels.json",
+      "sha256_original": "807ef35a5a87b21ed77b25af9c46cbe77f658dcafea4c790c5f5cc2d6fc2b198",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "configs/cooperative_delivery.json",
+      "source_project": "lun",
+      "source_path": "configs/cooperative_delivery.json",
+      "sha256_original": "502ce06ece604e4edda7720ea1741016c53bc5e6d4888432e810219c8662da36",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "configs/d435i.json",
+      "source_project": "lun",
+      "source_path": "configs/d435i.json",
+      "sha256_original": "bbd98c9bb32841bd35886e1e2c9afeb9c5e2108c1e534bfaba971163e1b0e078",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "configs/env_smoke.json",
+      "source_project": "lun",
+      "source_path": "configs/env_smoke.json",
+      "sha256_original": "da96dc3e8c126ad493c85344ba6add479d902460e3b567b9d70a0165a44fc23c",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "configs/formal_v1.json",
+      "source_project": "lun",
+      "source_path": "configs/formal_v1.json",
+      "sha256_original": "50b891ee488daf49b56c3e68d917403b4e2e1a398b47a06fe6ac5ccba6c6a509",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "configs/formal_v4.json",
+      "source_project": "lun",
+      "source_path": "configs/formal_v4.json",
+      "sha256_original": "e04e0e6748167b2d0b593388237439e6c2a621d4813e3c933a7835cf1af7354c",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "configs/online_coordination.json",
+      "source_project": "lun",
+      "source_path": "configs/online_coordination.json",
+      "sha256_original": "1c92c17cb66f8031dc74b7125ef829f28a59719a8e5ff61135d66b45e0eff996",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "configs/retained_models.json",
+      "source_project": "lun",
+      "source_path": "configs/retained_models.json",
+      "sha256_original": "ecab846eeb3f8d7dd6e272c300b2b1b62bb908d3d9b72331babaf0db47cdcb72",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "configs/rgbd_classical_expansion_protocol.json",
+      "source_project": "lun",
+      "source_path": "configs/rgbd_classical_expansion_protocol.json",
+      "sha256_original": "efd2bef94df8c0fe4ddd7976f1acc0dcadb47884660a4fcbf38e15eceb6085b7",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "configs/rgbd_holdout_protocol.json",
+      "source_project": "lun",
+      "source_path": "configs/rgbd_holdout_protocol.json",
+      "sha256_original": "cee1eabd11d84a19042c65760f8ef7e01e5f441787c32134ed9e620928a51ffa",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "configs/smoke.json",
+      "source_project": "lun",
+      "source_path": "configs/smoke.json",
+      "sha256_original": "d26a321a674f207d84e21cdaa00bfda40693fec239c22483108b1e5d30ab3163",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "tests/test_visual_guidance_contract.py",
+      "source_project": "lun",
+      "source_path": "tests/test_visual_guidance_contract.py",
+      "sha256_original": "c3058a6f213af1d8fb21d37154c6e41cd4d041fc9bec6491b63f16e1ec75cfbe",
+      "role": "primary"
+    },
+    {
+      "path": "tests/test_visual_recurrent_ppo.py",
+      "source_project": "lun",
+      "source_path": "tests/test_visual_recurrent_ppo.py",
+      "sha256_original": "3a49246489aaf32684dac7e4d7cb86e228789b406ed5f2687a384cd7578dc9d6",
+      "role": "primary"
+    },
+    {
+      "path": "tests/test_visual_task_progress.py",
+      "source_project": "lun",
+      "source_path": "tests/test_visual_task_progress.py",
+      "sha256_original": "9a6ff80160d75908b141234988ef70db41a90a56ebeaffc30dc195416c1a0b8e",
+      "role": "primary"
+    },
+    {
+      "path": "tests/test_visual_training_cycles.py",
+      "source_project": "lun",
+      "source_path": "tests/test_visual_training_cycles.py",
+      "sha256_original": "d62dae1de7485e927465a02ea34e0c4b24811ccef8e938d8cbe1cfa33adf2e98",
+      "role": "primary"
+    },
+    {
+      "path": "visual_guidance_lab/LONG_TRAINING.md",
+      "source_project": "lun",
+      "source_path": "visual_guidance_lab/LONG_TRAINING.md",
+      "sha256_original": "eb78b9207689ea077bb42f4d5b74be37126ce8f21b7d041ad4a50b37559fe830",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "visual_guidance_lab/README.md",
+      "source_project": "lun",
+      "source_path": "visual_guidance_lab/README.md",
+      "sha256_original": "6e83213e44bd10adea62ab3b4b2c4cd046b0a6f8e0231640a01eda8b7feafcfb",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "visual_guidance_lab/TRAINING_CYCLES.md",
+      "source_project": "lun",
+      "source_path": "visual_guidance_lab/TRAINING_CYCLES.md",
+      "sha256_original": "8685ec28e453df0fce491927a1158f9c7d5b158ddd70359c0d8c0f186a24918c",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "visual_guidance_lab/__init__.py",
+      "source_project": "lun",
+      "source_path": "visual_guidance_lab/__init__.py",
+      "sha256_original": "757337dfb4a60637f40942b8df7d3e52b5470a34c5a3b639bf290c08eee3bfa2",
+      "role": "primary"
+    },
+    {
+      "path": "visual_guidance_lab/action_contract.py",
+      "source_project": "lun",
+      "source_path": "visual_guidance_lab/action_contract.py",
+      "sha256_original": "9560c30925b5af0f6b8af6b0cb358698c7e706b476e9bbc264dccf0a0f0975bf",
+      "role": "primary"
+    },
+    {
+      "path": "visual_guidance_lab/bounded_job.py",
+      "source_project": "lun",
+      "source_path": "visual_guidance_lab/bounded_job.py",
+      "sha256_original": "0f1e43f283d32a002af028c4d9613f3ff44dc8a2650715bdd005970a2f2499d0",
+      "role": "primary"
+    },
+    {
+      "path": "visual_guidance_lab/camera_preflight.py",
+      "source_project": "lun",
+      "source_path": "visual_guidance_lab/camera_preflight.py",
+      "sha256_original": "8494640096f522382338fc32f9e167a0207b66c9d48173ee911848eebb6cceec",
+      "role": "primary"
+    },
+    {
+      "path": "visual_guidance_lab/direct_mission.py",
+      "source_project": "lun",
+      "source_path": "visual_guidance_lab/direct_mission.py",
+      "sha256_original": "2cf94fc31439f2cfa94239027c7f32c12f55811deb36d96d3f1eec6de9192c5b",
+      "role": "primary"
+    },
+    {
+      "path": "visual_guidance_lab/online_mission.py",
+      "source_project": "lun",
+      "source_path": "visual_guidance_lab/online_mission.py",
+      "sha256_original": "a33a70d97acf1d53447a783eb19d9a697a3ccdf0ff0774ea0de61cda167ff701",
+      "role": "primary"
+    },
+    {
+      "path": "visual_guidance_lab/policy.py",
+      "source_project": "lun",
+      "source_path": "visual_guidance_lab/policy.py",
+      "sha256_original": "9ab88908a0bd1d3e1e0e3a6a1ac7d54b16c8a1da4223a9f0e2c1c642e3657de5",
+      "role": "primary"
+    },
+    {
+      "path": "visual_guidance_lab/protocol.json",
+      "source_project": "lun",
+      "source_path": "visual_guidance_lab/protocol.json",
+      "sha256_original": "3f1e44887bc8e30f37d8c44af0c1917ae6c522b6c2553883ceda2ee8e71a8a03",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "visual_guidance_lab/random_tasks.py",
+      "source_project": "lun",
+      "source_path": "visual_guidance_lab/random_tasks.py",
+      "sha256_original": "68610c8a57ed75f6c590e0cc5adf1835dfdd0ee079cc6b5ec8c757469723319f",
+      "role": "primary"
+    },
+    {
+      "path": "visual_guidance_lab/recurrent_ppo.py",
+      "source_project": "lun",
+      "source_path": "visual_guidance_lab/recurrent_ppo.py",
+      "sha256_original": "60b6aeb80d2a56404969271e864825d06ad457a42a41ce1948c15d1ef38b94f3",
+      "role": "primary"
+    },
+    {
+      "path": "visual_guidance_lab/run_pilot.py",
+      "source_project": "lun",
+      "source_path": "visual_guidance_lab/run_pilot.py",
+      "sha256_original": "4b2701f7417180e461b4ae75dca30be83ee0c6e6f93ad1c5cba152c296ecc7d7",
+      "role": "primary"
+    },
+    {
+      "path": "visual_guidance_lab/task_progress.py",
+      "source_project": "lun",
+      "source_path": "visual_guidance_lab/task_progress.py",
+      "sha256_original": "fbbdc305db4af8941b7584c234ae56a3a0d3ac71cbced65e5514c4aa837ab115",
+      "role": "primary"
+    },
+    {
+      "path": "visual_guidance_lab/train_bootstrap.py",
+      "source_project": "lun",
+      "source_path": "visual_guidance_lab/train_bootstrap.py",
+      "sha256_original": "1147d723cdacc13a956565d84936a58eac80b186a6b14fc5aeaab5186e5ca0df",
+      "role": "primary"
+    },
+    {
+      "path": "visual_guidance_lab/train_cycles.py",
+      "source_project": "lun",
+      "source_path": "visual_guidance_lab/train_cycles.py",
+      "sha256_original": "0eb312cc3eed544345ad7dcbc629aa6a32d66f9a8f90d6d57c20ea9ee4313bf9",
+      "role": "primary"
+    },
+    {
+      "path": "visual_guidance_lab/training_support.py",
+      "source_project": "lun",
+      "source_path": "visual_guidance_lab/training_support.py",
+      "sha256_original": "bb44ef6b52f925cf9ee8d307bb5617e72d3f2756db6f06557deeaab0ce4584a7",
+      "role": "primary"
+    },
+    {
+      "path": "scripts/astronaut_kinematics.py",
+      "source_project": "lun",
+      "source_path": "scripts/astronaut_kinematics.py",
+      "sha256_original": "90eaaa79525f73665f13dfdb2f330545d3200e1ffadff0939869cfcab5f01ca9",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "scripts/build_astronaut_dual_arm.py",
+      "source_project": "lun",
+      "source_path": "scripts/build_astronaut_dual_arm.py",
+      "sha256_original": "5bbaf6b8fa462f2695559431b5be47f304c5a801729fa1717ab20841c251b3dc",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "scripts/pose_astronaut_work.py",
+      "source_project": "lun",
+      "source_path": "scripts/pose_astronaut_work.py",
+      "sha256_original": "f23f1383e4cf0100067c7d551d4014b25e05b2ed2d0ccd445a3e9bf8fb37863b",
+      "role": "shared_dependency"
+    }
+  ],
+  "portability_edits": [
+    "scripts/build_astronaut_dual_arm.py"
+  ],
+  "note": "Source hashes refer to original files before export-only path edits. Generated publication files are additional."
+}
